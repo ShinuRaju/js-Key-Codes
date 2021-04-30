@@ -73,6 +73,9 @@ body {
   animation-timing-function: ease-in-out;
   transform-origin: top center;
   animation-delay: calc(var(--i) * 200ms);
+  box-shadow: 0px 10px 24px -3px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0px 10px 24px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 10px 24px -3px rgba(0, 0, 0, 0.66);
 }
 
 .container .four-box div small {
@@ -90,10 +93,10 @@ body {
   }
 
   50% {
-    transform: translateX(2px);
+    transform: translateY(2px);
   }
 
   100% {
-    transform: translateY(-2px);
+    transform: translateZ(-2px);
   }
 }
