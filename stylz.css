@@ -66,6 +66,13 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-right: 2px solid rgba(255, 255, 255, 0.4);
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: top center;
+  animation-delay: calc(var(--i) * 200ms);
 }
 
 .container .four-box div small {
@@ -75,4 +82,18 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 0.5rem 0;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
 }
