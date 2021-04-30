@@ -28,7 +28,7 @@ body {
 .container h1 {
   padding: 3rem;
   text-align: center;
-  font-size: 15rem;
+  font-size: 6vw;
 
   border-radius: 5px;
   backdrop-filter: blur(5px);
@@ -74,4 +74,5 @@ body {
   color: rgb(255, 254, 254);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding: 0.5rem 0;
 }
